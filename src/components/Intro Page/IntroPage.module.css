@@ -1,0 +1,82 @@
+.container {
+    max-width: 73.875rem;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    /* height: 522px; */
+    height: 100vh;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+h1 {
+    width: 100%;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 9rem;
+    white-space: nowrap;
+}
+
+img {
+    width: 100%;
+}
+
+.btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 5px 2px rgb(105, 105, 105);
+}
+
+@media only screen and (max-width: 75rem) {
+    .container {
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+
+    .btn_container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .diceImage img {
+        width: 70%;
+        /* margin: auto; */
+    }
+
+    .diceImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 30rem) {
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    .diceText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn_container {
+        width: 40%;
+        font-size: 0.2rem;
+        white-space: nowrap;
+        justify-content: center;
+    }
+}
